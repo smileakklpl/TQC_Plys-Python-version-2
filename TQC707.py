@@ -1,0 +1,16 @@
+xS = set()
+yS = set()
+print('Enter group X\'s subjects:')
+x = input()
+while x != 'end':
+    xS.add(x)
+    x=input()  
+print('Enter group Y\'s subjects:')
+y = input()
+while y != 'end':
+    yS.add(y)
+    y=input() 
+print(sorted(xS.union(yS)))
+print(sorted(yS.intersection(xS)))
+print(sorted(yS.difference(xS)))
+print(sorted(yS.symmetric_difference(xS)))
